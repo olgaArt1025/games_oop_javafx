@@ -12,7 +12,6 @@ public class BishopBlackTest extends TestCase {
     @Test
     public void testPosition() {
         BishopBlack bishopBlack = new BishopBlack(Cell.F8);
-        bishopBlack.position();
         Assert.assertThat(bishopBlack.position(), Matchers.is(Cell.F8));
     }
 
@@ -20,7 +19,7 @@ public class BishopBlackTest extends TestCase {
     public void testCopy() {
         BishopBlack bishopBlack = new BishopBlack(Cell.F8);
         Figure figure = bishopBlack.copy(Cell.F8);
-        Assert.assertThat(bishopBlack.position(), Matchers.is(figure.position()));
+        Assert.assertThat(figure.position(), Matchers.is(Cell.F8));
     }
 
     @Test
