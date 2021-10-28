@@ -20,6 +20,7 @@ public class BishopBlackTest extends TestCase {
         BishopBlack bishopBlack = new BishopBlack(Cell.F8);
         Figure figure = bishopBlack.copy(Cell.F8);
         Assert.assertThat(figure.position(), Matchers.is(Cell.F8));
+
     }
 
     @Test
